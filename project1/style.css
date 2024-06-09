@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background: rgb(255, 255, 255);
+    font-family: 'Gilroy', arial;
+}
+.center{
+    padding-left: calc(50% - 618px);
+    padding-right: calc(50% - 618px);
+    /* 618 - это 1236(ширина полосочной части)/2 */
+}
+.header{
+    padding-top: 51px;
+    margin-bottom: 82px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap:40px;
+}
+.header__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    align-content: space-around;
+    align-items: center
+}
+.header__link_h{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: -1px;
+    letter-spacing: 0%;
+    text-align: left;
+    color:rgb(242, 88, 34);
+}
+.header__link{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: -1px;
+    letter-spacing: 0%;
+    text-align: left;
+    color:black;
+}
+.top__content{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:39px;
+}
+.top__info{
+    margin-top: 223px;
+    padding-bottom: 103px;
+    margin-bottom: 10px;
+    width: 543px;
+}
+.top__image{
+    margin-top: 162px;
+}
+.title{
+    margin-bottom: 17px;
+    color: rgb(0, 0, 0);
+    width: 522px;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: -1px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+.text{
+    color: rgb(136, 136, 136);
+    width: 466px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: -1px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-bottom: 37px;
+}
+.header__button{
+    padding: 12px 27px;
+    border-radius: 30px;
+    background: rgb(242, 88, 34);
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: -1px;
+    letter-spacing: 0%;
+    text-align: left;
+    outline: none;
+    border: none;
+}
+.top__button{
+    padding: 15px 35px;
+    border-radius: 50px;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.2);
+    background: rgb(242, 88, 34);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: -1px;
+    letter-spacing: 0%;
+    text-align: left;   
+    outline: none;
+    border: none;
+    
+
+}
+.top__buttons{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.top__link{
+    color: rgb(170, 170, 170);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: -1px;
+    letter-spacing: 0%;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+
+}
+.top__logos{
+    margin-top: 97px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 48px;
+    
+}
+.content{
+    display: grid;
+    gap: 60px;
+    grid-template-columns: repeat(3, 310px);
+    justify-content: start;
+    padding-top: 140px;
+    padding-bottom: 125px;
+}
+.item2{
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+.item1{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+.item__heading{
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: -1px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-top: 25px;
+    padding-bottom: 17px;
+}
+.item__text{
+    color: rgb(102, 102, 102);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+    padding-bottom: 25px;
+}
+.item__reading_m{
+    color: rgb(0, 0, 0);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+}
+@media(max-width: 1024px){
+    /* на этом этапе, после доб медиа запроса для айпада, при открытии откладчика, замечено отсутствие центрирования и полоса справа + шрифты - нужно поменять это, потом будем составлять оформление медиа-запроса
+    ПРОБЛЕМА В БЛОКЕ КОНТЕНТ - из-за него оставалась полоса справа */
+    .center{
+        padding-left: calc(50% - 350px);
+        padding-right: calc(50% - 350px);
+        /* (ширина heading - ширина визульных отступов)/2 */
+    /* добавились зеленые границы, центрирование до отметки 1024px */
+    }
+    .subtitle{
+        font-size: 15px;
+        /* если изменился */
+    }
+    .top__logos{
+        gap: 32px;
+        /* чтобы в 3 ряда */
+        max-width: 532px;
+        /* для центрирования */
+        margin: auto;
+
+    }
+    .content {
+        grid-template-columns: repeat(1, 370px);
+        gap: 30px;
+    }
+
+
+}
